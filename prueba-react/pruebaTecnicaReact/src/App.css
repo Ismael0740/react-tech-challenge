@@ -1,0 +1,147 @@
+/* Ajusta esta hoja de estilos a tu preferencia. */
+
+/* Contenedor general */
+.app-container {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Barra superior (header) */
+.top-bar {
+  background-color: #0080ff; /* Azul */
+  color: white;
+  padding: 0.5rem;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.top-bar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn,
+.trial-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.trial-btn {
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Barra secundaria (sub-bar) */
+.sub-bar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sub-bar h2 {
+  margin: 0;
+}
+
+/* Contenido principal */
+.main-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Tarjetas (Series, Movies) */
+.card {
+  text-decoration: none; /* Quita subrayado de <Link> */
+  color: inherit;
+  width: 200px;
+  background-color: #f0f0f0;
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: opacity 0.3s, border 0.3s;
+}
+
+.card:hover {
+  opacity: 0.8;
+  border: 2px solid white;
+}
+
+.card-image {
+  height: 250px;
+  background-color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image span {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-title {
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.store-icon {
+  width: 100px;
+  height: auto;
+}
