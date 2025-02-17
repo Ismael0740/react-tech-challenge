@@ -13,7 +13,11 @@ const Title = styled.h2`
 `;
 
 // Card Component
-const StyledCard = styled(Link)`
+interface StyledCardProps {
+  $imageUrl: string;
+}
+
+const StyledCard = styled(Link)<StyledCardProps>`
   background-color: black;
   color: white;
   display: flex;
@@ -24,7 +28,7 @@ const StyledCard = styled(Link)`
   border-radius: 0.5rem;
   width: 200px;
   height: 300px;
-  background-image: url(${(props: { imageUrl: string }) => props.imageUrl});
+  background-image: url(${(props) => props.$imageUrl});
   background-size: cover;
   background-position: center;
   text-decoration: none;
@@ -38,7 +42,7 @@ type CardProps = {
 
 function Card({ title, imageUrl, to }: CardProps) {
   return (
-    <StyledCard imageUrl={imageUrl} to={to}>
+    <StyledCard $imageUrl={imageUrl} to={to}>
       <h3>{title}</h3>
     </StyledCard>
   );
